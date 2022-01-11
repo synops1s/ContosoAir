@@ -9,8 +9,8 @@ steps:
       customcommand: 'install --production'
   - script: |
       npm install
-      npm install jest-junit --save-dev
       npm test
+    workingDirectory: $(System.DefaultWorkingDirectory)
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
