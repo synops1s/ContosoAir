@@ -1,5 +1,5 @@
 pool:
-  vmImage: ubuntu-18.04
+  vmImage: windows-2019
 trigger:
   - master
 steps:
@@ -8,7 +8,7 @@ steps:
       command: 'custom'
       customcommand: 'install --production'
   - script: |
-      npm ci
+      npm install
       npm test
     displayName: 'Run unit tests'
     continueOnError: true
