@@ -1,5 +1,5 @@
 pool:
-  vmImage: windows-2019
+  vmImage: ubuntu-latest
 trigger:
   - master
 steps:
@@ -9,6 +9,7 @@ steps:
       customcommand: 'install --production'
   - script: |
       npm install
+      npm install jest-cli
       npm test
     displayName: 'Run unit tests'
     continueOnError: true
