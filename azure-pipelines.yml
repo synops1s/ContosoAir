@@ -3,12 +3,9 @@ pool:
 trigger:
   - master
 steps:
-  - task: Npm@1
-    inputs:
-      command: 'custom'
-      customcommand: 'install --production'
   - script: |
-      npm install
+      cd $(build.sourcesdirectory)
+      npm install --production
       npm test
     workingDirectory: $(Build.SourcesDirectory)
     displayName: 'Run unit tests'
