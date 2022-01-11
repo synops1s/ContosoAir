@@ -10,7 +10,7 @@ steps:
   - script: |
       npm install
       npm test
-    workingDirectory: $(System.DefaultWorkingDirectory)
+    workingDirectory: $(Build.SourcesDirectory)
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
