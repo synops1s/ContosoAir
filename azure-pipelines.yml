@@ -9,7 +9,7 @@ steps:
       customcommand: 'install --production'
   - script: |
       npm install
-      npm test
+      npm test -- --updateSnapshot
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
