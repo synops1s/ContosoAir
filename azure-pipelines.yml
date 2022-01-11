@@ -9,7 +9,8 @@ steps:
       customcommand: 'install --production'
   - script: |
       npm install
-      npm test -- --updateSnapshot
+      npm install jest-cli
+      npm test
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
