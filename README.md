@@ -1,5 +1,6 @@
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 
+[![Build Status](https://dev.azure.com/az400green1/ContosoAir/_apis/build/status/synops1s.ContosoAir?branchName=master)](https://dev.azure.com/az400green1/ContosoAir/_build/latest?definitionId=4&branchName=master)
 
 # Microsoft.Github CI Demo
 
